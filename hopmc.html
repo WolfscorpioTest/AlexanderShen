@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSPJBPLTJ3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LSPJBPLTJ3');
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopMC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hopmc_style.css">
+
+
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
+
+
+    <!-- The font is generated from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Import the caret icon style sheet from fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery -->
+    <script src="https.//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <!-- Sub Folder for CS Project Page-->
+    <section class="sub-header">
+        <nav>
+            <!-- able to click on the logo and go to main page-->
+            <div class="nav-links" id="navLinks">
+                <!-- Display the navigation bar titles and link them to the respective .html -->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="engineering.html">Engineering</a>
+                                <a href="compsci.html">Computer Science</a>
+                                <a href="hopmc.html">HopMC</a>
+                                <a href="art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Add the signature logo image -->
+        <img src="images/hopmc/hopmc_signature.png" alt="HopMC" class="center-sub" id="hopmc-logo">
+    </section>
+
+    <!-- HopMC Gallery -->
+    <!-- Who are we? -->
+    <div class="section-box">
+        <div class="content" id="bird-logo-l">
+            <h1>Who are We?</h1>
+            <p> When COVID-19 brought our high school career to a sudden halt, many new JHU students embraced their
+                favorite videogame and childhood memories - Minecraft. This simple yet fascinating sandbox game is
+                like digital LEGO: one can build virtually anything, from skyscrapers to automatic farms to
+                custom-coded game extensions.<br>
+                <br>
+                Several friends and I from JHU c/o 2024 were <span id="bold"> meeting new friends on a multi-player
+                    Minecraft server.</span>
+                From its growing popularity, we saw the game's incredible power to
+                connect and unite people, especially under the distress of a pandemic. In the summer of 2020, we
+                started HopMC, <span id="bold">the official JHU student group for Minecraft.</span>
+                <br>
+            </p>
+        </div>
+
+        <div class="image-box" id="bird-logo-r">
+            <img style="vertical-align:middle;" src="images/hopmc/HopMC_Logo_Blue_Feet.png">
+        </div>
+
+    </div>
+
+    <!-- Put the club stats here -->
+    <class class="stats-wrapper">
+
+        <div class="stat-block">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span class="num" data-val="76">76</span>
+            <span class="text">Max # Players Online</span>
+        </div>
+
+        <div class="stat-block">
+            <i class="fa-solid fa-video"></i>
+            <span class="num" data-val="500">500</span>
+            <span class="text">Game Highlight Views</span>
+        </div>
+
+        <div class="stat-block">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="num" data-val="472">470</span>
+            <span class="text">Ins Followers</span>
+        </div>
+
+        <div class="stat-block">
+            <i class="fa-solid fa-newspaper"></i>
+            <span class="num" data-val="4">4</span>
+            <span class="text">News articles about Us</span>
+        </div>
+    </class>
+
+    <!-- The Adventure -->
+    <!-- <section class="container reveal"> -->
+    <div class="section-box">
+        <div class="image-box" id="campus-process-l">
+            <img src="images/hopmc/campus_gilman_skeleton.png">
+        </div>
+
+        <div class="content" id="campus-process-r">
+            <h1>The Adventure</h1>
+            <p> In August 2020, about 15 players became interested in <span id="bold">re-building
+                    the Johns Hopkins Homewood Campus on Minecraft. </span> On August 6th, 2020, We started with
+                Gilman Hall, the school landmark. We based the scale off of several
+                <span id="bold">blueprints found on Google and collaborated over Discord voice chats.</span>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="center-section-box">
+        <h2> This is what we got after two weeks: </h2>
+    </div>
+
+    <!-- Embed the trailer Video -->
+    <div class="center-vid-container">
+        <div class="center-youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ahXFe0YvNvQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="big-gap" style="margin-bottom: 6vw;"></div>
+    <div class="center-section-box">
+        <h2> And here are the event highlights from 2020: </h2>
+    </div>
+
+    <!-- Embed Game Highlight Video -->
+    <div class="center-vid-container">
+        <div class="center-youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rb3Qr7WU0b4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="big-gap" style="margin-bottom: 6vw;"></div>
+    <!-- Image grid starts here -->
+    <div class="center-section-box">
+        <h2> More images of our game maps: </h2>
+    </div>
+
+    <div class="img-gallery">
+        <div class="gallery-container w-5 h-3">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/spawn_night_view.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-4 h-3">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/spawn_side_tunnel.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-3 h-1">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/survival_cave_house.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-2 h-1">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/survival_lava_farm.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-4 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/winter_christmas_tree.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-5 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/spawn_bird_itself.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-2 h-3">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/campus_road_straight.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-2 h-3">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/survival_tourist_tower.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-5 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/winter_house_lake.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-3 h-3">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/event_1st_Place_Dragon_Annabelle.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-3 h-3">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/event_2nd_Place_Skeleton_Nicole.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-3 h-3">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/event_3rd_Place_Medusa_Christina_Alec_Sophie.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-4 h-1">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/event_build_battle_progress.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-5 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/event_among_us.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-4 h-4">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/event_spring_fair.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-5 h-1">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/campus_Gilman_Lawn_Facing_Gilman.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-5 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/campus_Keyser_Quad_Top_View.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-3 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/survival_indoor_room.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-3 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/campus_Ames_Back.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-3 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/event_Scholars_MC_group_pic.JPG">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-5 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/campus_atrium_ceiling.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-4 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/survival_kareef.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-4 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/spawn_bird_night.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container w-5 h-2">
+            <div class="gallery-item">
+                <div class="image">
+                    <img src="images/hopmc/Spawn_Night_with_Jays.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Hyperlinks for HopMC-->
+    <div class="center-section-box">
+        <h2> Explore more:<a href="https://www.instagram.com/hopmc.official/?hl=en" target="_blank"
+                rel="noopener noreferrer"> <i class="fa-brands fa-instagram" id="small-i"></i> hopmc.official </a><a
+                href="https://www.youtube.com/channel/UCjMZQkDQBslzJ3NXdJM1yMg" target="_blank"
+                rel="noopener noreferrer"> <i class="fa fa-youtube-play" id="small-i"></i>HopMC</a> </h2>
+    </div>
+
+    <!-- Prev and next buttons -->
+    <div class="nav-button-grid">
+        <div class="nav-button-container">
+            <a href="engineering.html">
+                <h3> Previous: Projects</h3>
+            </a>
+        </div>
+
+        <div class="nav-button-container">
+            <a href="art.html">
+                <h3> Next: Art </h3>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/joyleafy2002/?hl=en" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/yeh.joy.1/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCYaDuhLA0OO3Q-MnSY8LMWg" target="_blank"
+                rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/joy-yeh-2002/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+
+        <p> Made with <a href="https://joyyeh2002.github.io/"><i class="fa fa-heart" aria-hidden="true"></i></a> by
+            Joy Yeh </p>
+    </section>
+
+
+    <script>
+        /* The reveal function */
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+    <!-- JQuery counter up script -->
+    <script>
+        $(document).ready(function () {
+            $(".num").counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
+
+    <script src="exercises/animated_tally/script.js" async defer></script>
+
+    <script>
+
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 1200,
+            delay: 300
+        });
+
+
+        ScrollReveal().reveal('.widgets', {
+            viewOffset: {
+                top: 900
+            }
+        });
+
+
+        ScrollReveal().reveal('.section-box .content h1', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('#bird-logo-l p', { delay: 700, duration: 3000, origin: 'left' });
+        ScrollReveal().reveal('#campus-process-r p', { delay: 700, duration: 3000, origin: 'right' });
+
+        ScrollReveal().reveal('.image-box img', { delay: 600, distance: '80px', duration: 1500, origin: 'bottom' });
+
+        ScrollReveal().reveal('.stats-wrapper .stat-block:nth-child(1), .stats-wrapper .stat-block:nth-child(3) ', { delay: 600, distance: '50px', duration: 1500, origin: 'bottom' });
+        ScrollReveal().reveal('.stats-wrapper .stat-block:nth-child(2), .stats-wrapper .stat-block:nth-child(4) ', { delay: 600, distance: '50px', duration: 1500, origin: 'top' });
+
+        ScrollReveal().reveal('.center-section-box', { delay: 0, distance: '20px', duration: 1400, origin: 'top' });
+        ScrollReveal().reveal('.center-vid-container', { delay: 0, distance: '20px', duration: 1400, origin: 'top' });
+
+        // Reveal the grid 
+        //  ScrollReveal().reveal('.img-gallery .gallery-container .gallery-item .image img', { delay: 400, distance: '10px', duration: 400, origin: 'bottom' });
+
+        // Reveal buttons
+        ScrollReveal().reveal('.nav-button-grid', { delay: 200, distance: '10px', duration: 700, origin: 'top' });
+    </script>
+
+</body>
+
+</html>

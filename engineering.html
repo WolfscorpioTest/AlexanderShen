@@ -1,0 +1,238 @@
+<!-- Updated 09.15.2023 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSPJBPLTJ3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-LSPJBPLTJ3');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- The font is generated from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2442adcce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Sub Folder for Engineering Project Page-->
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="engineering.html">Engineering</a>
+                                <a href="compsci.html">Computer Science</a>
+                                <a href="hopmc.html">HopMC</a>
+                                <a href="art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Add the signature logo image -->
+        <img src="images/engineering/engineering_signature.png" alt="Engineering" class="center-sub" id="eng-logo">
+    </section>
+
+    <!-- Eng Projects Gallery -->
+    <div class="project-gallery-main" id="breadboard-circuits">
+
+        <!-- Design Projects -->
+        <div class="title-block">
+            <h1 id="small-title"> Design Projects</h1>
+        </div>
+
+        <div class="project-gallery">
+            <idv class="project-container">
+                <a href="engineering_projects/ofdm.html">
+                    <img src="images/engineering/eng_title_page/ofdm_cover.png" style="height:100%;"></a>
+                <p> OFDM Wireless Audio Transmission </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/cmos_imager.html">
+                    <img src="images/engineering/eng_title_page/vlsi_cover.png" style="height:100%;"></a>
+                <p> CMOS Imager </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/dtmf.html">
+                    <img src="images/engineering/eng_title_page/dtmf_cover.png"></a>
+                <p> Phone Key DTMF </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/sonar.html">
+                    <img src="images/engineering/eng_title_page/sonar_cover.png"></a>
+                <p> Sonar Signal Decryption </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/thrust_stand.html">
+                    <img src="images/engineering/eng_title_page/thrust_stand_cover.png"></a>
+                <p> Rocket Thrust Stand Design </p>
+            </idv>
+        </div>
+
+        <!-- AstroJays UPDATE 09.15.23: Got rid of website -->
+        <!-- <div class="title-block">
+            <h1 id="small-title">AstroJays Rocketry</h1>
+        </div>
+
+        <div class="project-gallery">
+            <idv class="project-container">
+                <a href="engineering_projects/thrust_stand.html">
+                    <img src="images/engineering/eng_title_page/thrust_stand_cover.png"></a>
+                <p> Thrust Stand Design </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="https://astrojays.github.io/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/engineering/eng_title_page/astrojays_cover.PNG"></a>
+                <p> The AstroJays Team Website </p>
+            </idv>
+        </div> -->
+
+        <!-- Course Projects-->
+        <div class="title-block">
+            <h1 id="small-title">Breadboard Circuits</h1>
+        </div>
+
+        <div class="project-gallery">
+            <idv class="project-container">
+                <a href="engineering_projects/traffic.html">
+                    <img src="images/engineering/eng_title_page/traffic_cover.png"></a>
+                <p> Traffic Lights Simulator </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/am_radio.html">
+                    <img src="images/engineering/eng_title_page/radio_cover.png"></a>
+                <p> AM Radio Receiver </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/quad_counter.html">
+                    <img src="images/engineering/eng_title_page/quad_counter_cover.png"></a>
+                <p> Quadrature Counter</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/gray_counter.html"><img
+                        src="images/engineering/eng_title_page/gray_code_cover.png"></a>
+                <p> 3-bit Gray Code </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/mosquito_trap.html">
+                    <img src="images/engineering/eng_title_page/mosquito_cover.png"></a>
+                <p> Solar-Powered Mosquito Trap </p>
+            </idv>
+        </div>
+    </div>
+
+    <!-- Prev and next buttons -->
+    <div class="nav-button-grid">
+        <div class="nav-button-container">
+            <a href="index.html">
+                <h3> Previous: Home</h3>
+            </a>
+        </div>
+
+        <div class="nav-button-container">
+            <a href="compsci.html">
+                <h3> Next: CS </h3>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/joyleafy2002/?hl=en" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/yeh.joy.1/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCYaDuhLA0OO3Q-MnSY8LMWg" target="_blank"
+                rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/joy-yeh-2002/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+
+        <p> Made with <a href="https://joyyeh2002.github.io/"><i class="fa fa-heart" aria-hidden="true"></i></a> by Joy
+            Yeh </p>
+    </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+
+    </script>
+
+    <!-- JS Reveal -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
+
+    <!-- Java Script for smooth transition -->
+    <script>
+        var speed = 'slow';
+        $('html, body').hide();
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

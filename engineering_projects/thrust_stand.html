@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering | Thrust Stand </title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
+    <link rel="stylesheet" href="../scroll_container/my_scroll_style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../engineering.html#breadboard-circuits">Engineering Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../compsci.html">CS</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content" id="rocket-l">
+                <h1> Test Stand for Rocket Combustion Chamber</h1>
+                <h2> September 2021<br>
+                    JHU AstroJays Rocketry Team <br>
+                </h2>
+
+                <h3> Objectives: </h3>
+                <li> Design and build a test stand for the team's hybrid rocket engine, BJ01. The rocket engine is about
+                    6 feet long and can theoretically generate <span id="bold-p"> 825 lb of thrust and 9100lbf-s of
+                        total impulse.</span></li>
+                <li> <span id="bold-p"> During a hotfire test, the rocket engine is fired while secured on the
+                        stand.</span> Measurements such as
+                    chamber temperature, interior pressure, and the time vs. force curves are made. </li>
+                <li> Therefore, the design needs to withstand high shear forces and possibilities of structural
+                    deformations. </li>
+                <li> To improve structural integrity, we decided to <span id="bold-p"> place 4 sliding carriages under
+                        the chamber stand
+                        and the base.</span> This allows the combustion chamber to slide backward slightly during
+                    firing. However,
+                    several important components are manufactured in either imperial or metric units. Thus, multiple
+                    plates were designed to <span id="bold-p"> mate the components across measurement systems.</span>
+                </li>
+
+                <h3>Skills Applied:</h3>
+                <li> Mechanical design, SOLIDWORKS parts and assembly </li>
+                <li> The ANSI Engineering Drawing standard </li>
+
+                <h3>Comments:</h3>
+                <li>I applied CAD and design knowledge from my first-year Mechanical Engineering courses. I also
+                    received a lot of help from upperclassmen and gained valuable experience in engineering design.</li>
+                <li> I created all the CAD files, drawings, and bill of materials in SOLIDWORKS. I was also in charge of
+                    working with the team treasurer on ordering components.</li>
+                <li> The actual thrust stand <span id="bold-p">assembly was finished in Spring 2022</span>, thanks to many teammates who spent
+                    many hours manufacturing.
+                </li>
+                <li>Learn more about 
+                    <a href="https://astrojays.github.io/index.html" target="_blank" rel="noopener noreferrer"> AstroJays </a></li>
+
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images" id="rocket-r">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="traffic.html" class="previous"> &laquo; Previous: Traffic Lights </a>
+                    <a href="cmos_imager.html" class="next">Next: CMOS &raquo;</a>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/thrust_stand_proj/real_clamps.jpg">
+                    <p> The clamp assemblies (Image from Rishi Bachani).</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="wiki">
+        <div class="wiki-content" style="margin-top: -2rem; margin-bottom: 2vw;">
+            <h3> Scroll sideways or click on the scroll bar below to view more images: </h3>
+        </div>
+    </div>
+
+    <div class="scroll-window">
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/stand_assem_CAD_whole.PNG">
+            </div>
+            <div class="img-description">
+                <p> SOLIDWORKS assembly of the thrust stand.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/load_cell_mating.png">
+            </div>
+            <div class="img-description">
+                <p> The load cell interface.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/clamp_section_tree.png">
+            </div>
+            <div class="img-description">
+                <p> One of the two clamp sections.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/assembly_tree.png">
+            </div>
+            <div class="img-description">
+                <p> Back view of the thrust stand CAD model.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/components.PNG">
+            </div>
+            <div class="img-description">
+                <p> Some of the componenets created or imported from the McMaster Carr website.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/custom_cap.PNG">
+            </div>
+            <div class="img-description">
+                <p> Engineering drawing of a custom bracked part.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/load_cell_plate.PNG">
+            </div>
+            <div class="img-description">
+                <p> Engineering drawing of the load cell plate.</p>
+            </div>
+        </section>
+
+        <!-- Excel BOM start here -->
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/BOM_excel01.png">
+            </div>
+            <div class="img-description">
+                <p> The Excel sheet BOM shared with my teammates.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/BOM_excel02.png">
+            </div>
+            <div class="img-description">
+                <p> The CAD model and assembly drawing.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/real_stand.png">
+            </div>
+            <div class="img-description">
+                <p> Manufacturing progress 01. </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="img-frame">
+                <img src="../images/engineering/thrust_stand_proj/real_base.png">
+            </div>
+            <div class="img-description">
+                <p> Manufacturing progress 02. </p>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+
+    </script>
+
+    <!-- JS Reveal -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
+
+    <!-- Java Script for smooth transition -->
+    <script>
+        var speed = 'slow';
+
+        $('html, body').hide();
+
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

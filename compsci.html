@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSPJBPLTJ3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-LSPJBPLTJ3');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- The font is generated from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2442adcce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Sub Folder for CS Project Page-->
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <!-- Display the navigation bar titles and link them to the respective .html -->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="engineering.html">Engineering</a>
+                                <a href="compsci.html">Computer Science</a>
+                                <a href="hopmc.html">HopMC</a>
+                                <a href="art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Add the signature logo image -->
+        <img src="images/compsci/cs_signature.png" alt="Computer Science" id="comp-sci-logo" class="center-sub">
+    </section>
+
+    <!-- CS Projects Gallery -->
+    <div class="project-gallery-main" id="course-projects">
+        <!-- Self Projects -->
+        <div class="title-block">
+            <h1 id="small-title">Research & Course Projects</h1>
+        </div>
+
+        <div class="project-gallery">
+            <idv class="project-container">
+                <a href="compsci_projects/limbs_gui.html">
+                    <img src="images/compsci/cs_title_page/limbs_cover.png"></a>
+                <p> Glass Knifefish Locomotion Research</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="compsci_projects/MIA_cardiac.html">
+                    <img src="images/compsci/cs_title_page/MIA_cover.png"></a>
+                <p> Cardiac Volume Reconstruction</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="compsci_projects/game_of_life.html">
+                    <img src="images/compsci/cs_title_page/game_of_life_cover.PNG"></a>
+                <p> John Conway's Game of Life</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="compsci_projects/audio_generator.html"><img
+                        src="images/compsci/cs_title_page/rick_roll_cover.PNG"></a>
+                <p> Digital Audio Generator</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="https://github.com/JoyYeh2002/ML_Income_Binary_Classsification_Task" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/compsci/cs_title_page/ML_cover.png"></a>
+                <p> ML: Income Range vs. Demographic (GitHub)</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="https://github.com/JoyYeh2002/Avoid_Falling_Blocks_Game" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/compsci/falling_blocks_proj/ggPNG.PNG"></a>
+                <p> Videogame for Motor Rehabilitation (GitHub)</p>
+            </idv>
+        </div>
+        
+        <!--
+        UPDATED 09.13.2023: Take out simple cs projects and move them into archive
+        
+        Course Projects
+        <div class="title-block">
+            <h1 id="small-title">Course Projects</h1>
+        </div>
+
+        <div class="project-gallery"> 
+
+            
+            <idv class="project-container">
+                <a href="compsci_projects/movie_sentiments.html">
+                    <img src="images/compsci/cs_title_page/movie_cover.PNG"></a>
+                <p> Movie Sentiments</p>
+            </idv>
+            
+            <idv class="project-container">
+                <a href="compsci_projects/trie.html">
+                    <img src="images/compsci/cs_title_page/word_hunt_cover.PNG"></a>
+                <p>Play Word Hunt with Trie</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="compsci_projects/dijkstra.html">
+                    <img src="images/compsci/cs_title_page/dijkstra_cover.PNG"></a>
+                <p> Dijkstra Path Finder</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="compsci_projects/hex_dump.html">
+                    <img src="images/compsci/cs_title_page/hex_dump_cover.png"></a>
+                <p> x86 Assembly Hex Dump</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="compsci_projects/cache.html">
+                    <img src="images/compsci/cs_title_page/cache_cover.png"></a>
+                <p> Cache Simulator</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="compsci_projects/hash_map.html">
+                    <img src="images/compsci/cs_title_page/hash_map_cover.PNG"></a>
+                <p> Robinhood Hash Map</p>
+            </idv> -->
+        </div>
+    </div>
+
+    <!-- Prev and next buttons -->
+    <div class="nav-button-grid">
+        <div class="nav-button-container">
+            <a href="engineering.html">
+                <h3> Previous: Engineering</h3>
+            </a>
+        </div>
+
+        <div class="nav-button-container">
+            <a href="hopmc.html">
+                <h3> Next: HopMC </h3>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/joyleafy2002/?hl=en" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/yeh.joy.1/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCYaDuhLA0OO3Q-MnSY8LMWg" target="_blank"
+                rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/joy-yeh-2002/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+
+        <p> Made with <a href="https://joyyeh2002.github.io/"><i class="fa fa-heart" aria-hidden="true"></i></a> by Joy
+            Yeh </p>
+    </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+
+    </script>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+    <!-- Java Script for smooth transition to here-->
+    <script>
+        var speed = 'slow';
+        $('html, body').hide();
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!-- Index page cleaned up on 09.15.2023 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSPJBPLTJ3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-LSPJBPLTJ3');
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Yeh</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Generate and reference fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Import the caret icon style sheet from fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <!-- able to click on the logo and go to main page-->
+            <div class="nav-links" id="navLinks">
+                <!-- Display the navigation bar titles and link them to the respective .html -->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="engineering.html">Engineering</a>
+                                <a href="compsci.html">Computer Science</a>
+                                <a href="hopmc.html">HopMC</a>
+                                <a href="art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Add the signature logo image -->
+        <img src="images/index/hyeh_signature_orange.png" id="home-logo"> 
+    </section>
+
+    <section class="container reveal">
+        <!-- Self-intro/welcome section -->
+        <section class="title-block">
+            <h1>Welcome!</h1>
+            <p style="text-align: center;"> 
+                Hello! My name is Huanying Yeh and I also go by <span id="bold-intro-text">Joy</span>. 
+                I study <span id="bold-intro-text">electrical engineering and computer science</span> 
+                at Johns Hopkins University, expecting to receive a <span id="bold-intro-text">
+                B.S./M.S. combined degree </span> in <span id="bold-intro-text">2025</span>.
+                <br>
+                <br>
+                <span id="bold-intro-text"> I loved designing and creating</span> since I was little, 
+                and my college life had been a dream come true! 
+                <br>
+                <br>
+                I want to <span id="bold-intro-text"> change the world with design and engineering. </span> 
+                I've contributed to <span id="bold-intro-text">academic research</span> (locomotion of electric fish), 
+                built <span id="bold-intro-text">sustainable energy infrastructure </span> (solar-powered mosquito trap), 
+                supported <span id="bold-intro-text">new discoveries in space </span>(Pathways internship at NASA GSFC), 
+                and applied techniques in <span id="bold-intro-text">signal</span> (wireless device algorithms) 
+                and <span id="bold-intro-text">image processing</span> (cardiac imaging).
+                I can't wait to explore more. 
+                <br>
+                <br>
+                Updated September 2023. <br>
+                <span id="bold-intro-text">NEW! Printed-version engineering portfolio: </span><a href="#"
+                    onclick='window.open("images/index/Yeh_Huanying_Portfolio_FA23.pdf");return false;'>
+                    <span id="bold-intro-text">LINK</span></a></li>
+            </p>
+
+            <div class="gap-space" style="margin-top: 8vh;"></div>
+        </section>
+    </section>
+
+    <!-- Projects title block with reveal -->
+    <section class="container reveal">
+        <div class="title-block">
+            <h1>Projects</h1>
+        </div>
+        <div class="projects">
+            <div class="projects-col">
+                <div class="img-gradient">
+                    <img src="images/index/proj_cover_engineering.png">
+                </div>
+                <div id="content-2-2" onclick="location.href='engineering.html'">
+                    <div class="layer">
+                        <h3> ENGINEERING </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-col">
+                <div class="img-gradient">
+                    <img src="images/index/proj_cover_compsci.png">
+                </div>
+                <div id="content-2-2" onclick="location.href='compsci.html'">
+                    <div class="layer">
+                        <h3> CS </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-col">
+                <div class="img-gradient">
+                    <img src="images/index/proj_cover_hopmc.png">
+                </div>
+                <div id="content-2-2" onclick="location.href='hopmc.html'">
+                    <div class="layer">
+                        <h3> HOPMC </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-col">
+                <div class="img-gradient">
+                    <img src="images/index/proj_cover_art.png">
+                    </a>
+                </div>
+                <div id="content-2-2" onclick="location.href='art.html'">
+                    <div class="layer">
+                        <h3> ART </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section class="container reveal">
+        <div class="title-block" style="text-align:center">
+            <p> See my skills <a class="skill-button" href="skills.html">here</a>! </p>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/joyleafy2002/?hl=en" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/yeh.joy.1/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCYaDuhLA0OO3Q-MnSY8LMWg" target="_blank"
+                rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/joy-yeh-2002/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+
+        <p> Made with <a href="https://joyyeh2002.github.io/"><i class="fa fa-heart" aria-hidden="true"></i></a> by
+            Joy Yeh </p>
+    </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+
+    </script>
+
+    <!-- JS Reveal -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
+
+    <!-- Java Script for smooth transition -->
+    <script>
+        var speed = 'slow';
+        $('html, body').hide();
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

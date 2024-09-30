@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering | Phone Key DTMF</title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../engineering.html#breadboard-circuits">Engineering Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../compsci.html">CS</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content" id="dtmf-l">
+                <h1> Phone Key DTMF Decryption with Additive Noise</h1>
+                <h2> April 2022<br>
+                    EN.520.214 Signals and Systems <br>
+                </h2>
+
+                <h3> Objectives: </h3>
+                <li> <span id="bold-p">Use MATLAB to generate and decode the dual-tone frequency audio</span> for 12
+                    keys on
+                    the phone pad
+                </li>
+                <li> Investigate the effects of <span id="bold-p">additive noise, diffterent channel gains, and
+                        reverberation. </span></li>
+                <li> Test the decode() function extensively to find the maximum gain allowed for successful decryption
+                </li>
+
+                <h3>Skills Applied & Outcomes:</h3>
+                <li> Signal processing: using energy threshold and FFT to separate phone key tones from
+                    noise.</li>
+                <li> Validate the audio time intervals in both the time- and frequency-domain. </li>
+                <li> The algorithm can <span id="bold-p">correctly decode individual phone key characters 80%+ of the time with noise gain
+                    = 3 (when the noise was 3 times louder than the actual signal)</span></li>
+                <li> <span id="bold-p"> For a = 1.4, there 90%+ of the phone numbers (length 4-10 digits) encoded entirely correctly.</span></li>
+                <li> Most of my peers' algorithms were able to have noise gains up to 0.8 - 1.1.</li>
+
+                <h3> Comments: </h3>
+                <p> This is one of the most challenging and complete individual projects I've done. I learned to do my
+                    best under a tight deadlind, maximize efficiency in a code/file organizations, and clarify my
+                    scientific writing. <!-- See
+                    <a href="#"
+                        onclick='window.open("../images/engineering/dtmf_proj/Yeh_Proj02_Report.pdf");return false;'>
+                        this link </a> for the complete project report. !-->
+                </p>
+
+                <div id="blank-space-small" style="padding-top: 11px;"></div>
+
+                <!-- Images -->
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/dtmf_proj/alpha_report_annotated.JPG"
+                        style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Accuracy vs. noise gain.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/dtmf_proj/accuracy_vs_duration_plot.png"
+                        style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Accuracy vs. key press duration. </p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/dtmf_proj/accuracy_vs_reverb_time_plot.png"
+                        style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Accuracy vs. reverberation time. </p>
+                </div>
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images" id="dtmf-r">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="cmos_imager.html" class="previous"> &laquo; Previous: CMOS Imager </a>
+                    <a href="sonar.html" class="next">Next: Sonar Decryption &raquo;</a>
+                </div>
+
+                <div class="wiki-image-box">
+                    <!-- Images -->
+                    <div class="wiki-image-box">
+                        <img src="../images/engineering/dtmf_proj/context_page.png"
+                            style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                        <p> Noisy signal with alpha = 4; FFT of a single tone; phone key DTMF.</p>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="wiki-image-box">
+                        <img src="../images/engineering/dtmf_proj/algo_steps.JPG"
+                            style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                        <p> Workflow of the algorithm: band-pass filer -> energy band binary labels -> FFT of each
+                            interval.</p>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="wiki-image-box">
+                        <img src="../images/engineering/dtmf_proj/sample_analysis_steps.png"
+                            style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                        <p> Another illustration of the above steps.</p>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="wiki-image-box">
+                        <img src="../images/engineering/dtmf_proj/alpha_snapshot_2.JPG"
+                            style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                        <p> Randomly-generated phone key sequences and their decode outputs at various alpha values.
+                            Most digits are still correct.</p>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+    <!-- JS for smooth page transition -->
+    <script>
+        var speed = 'normal';
+        $('html, body').hide();
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

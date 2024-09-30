@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS | Hex Dump </title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../compsci.html#course-projects">CS Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../engineering.html">Engineering</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content">
+                <h1> Hex Dump (x86 Assembly)</h1>
+                <h2> February 2022 <br>
+                    EN.601.229 Computer Systems Fundamentals<br>
+                </h2>
+
+                <h3> Objectives:</h3>
+                <li>x86 Assembly hex dump implementation
+                </li>
+
+                <li>Takes a string input and print out the character
+                    count and the corresponding hex strings
+                </li>
+
+                <h3>Skills Applied:</h3>
+                <li>Coding for-loops and input-reading in<span id="bold-p"> x86 Assembly with the PIC Convention </span></li>
+                <li>Commenting, code tracing, debugging with GDB
+                </li>
+
+                <h3>Comments:</h3>
+                <p> Using assembly language helped me <span id="bold-p">become more comfortable with gdb.</span> The image showed some of the
+                    code comments (actual code
+                    covered for academic integrity.)
+                </p>
+                <div id="blank-space"></div>
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="dijkstra.html" class="previous"> &laquo; Previous: Dijkstra</a>
+                    <a href="cache.html" class="next">Next: Cache &raquo;</a>
+                </div>
+
+                <!-- Images -->
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/hex_dump_proj/sample_run.PNG" style="width:100%;">
+                    <p> The Digital Wave Array with Sinusoids.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/hex_dump_proj/comments.PNG">
+                    <p> Code comments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+    <!-- JS for smooth page transition -->
+    <script>
+        var speed = 'normal';
+        $('html, body').hide();
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

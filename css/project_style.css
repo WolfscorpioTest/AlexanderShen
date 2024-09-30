@@ -1,0 +1,224 @@
+/* The style page for individual projects (title, time, objectives, and description). */
+/* Project wiki general style */
+.wiki {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    scroll-behavior: smooth;
+}
+
+#contact-wiki {
+    width: 70%;
+}
+
+/* wiki box */
+.wiki-content {
+    width: 60%;
+    float: left;
+    margin-bottom: 2rem;
+    color: var(--dark-navy);
+    word-wrap: break-word;
+    position: relative;
+}
+
+.wiki-content h1 {
+    font-size: 2rem;
+    padding-top: 1.2rem;
+}
+
+.wiki-content h2 {
+    font-size: 0.9rem;
+    line-height: 24px;
+}
+
+.wiki-content h3 {
+    font-size: 0.9rem;
+    padding-top: 24px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.wiki-content a {
+    font-size: 14px;
+    padding-top: 24px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.wiki-content h4 {
+    font-size: 14px;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.wiki-content li, p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 3px;
+    color: var(--dark-navy-solid);
+}
+
+#bold-p {
+    font-size: 14px;
+    color: var(--dark-navy);
+    font-weight: 800;
+}
+
+#blank-space {
+    margin-top: 60px;
+}
+
+#blank-space-big {
+    margin-top: 120px;
+}
+
+#blank-space-small {
+    margin-top: 20px;
+}
+
+/* wiki image column */
+.wiki-images {
+    width: 38%;
+    float: right;
+    min-height: 500px;
+    word-wrap: break-word;
+    padding-top: 40px;
+}
+
+.wiki-image-box {
+    /* the container element */
+    position: relative;
+    margin-bottom: 2vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wiki-image-box p {
+    font-size: 0.8rem;
+    margin-top: -8px;
+}
+
+.wiki-image-box img {
+    /* The actual image */
+    width: 100%;
+    height: 100%;
+}
+
+.button-box {
+    height: 40px;
+    z-index: 1;
+    margin-top: -10px;
+    padding-bottom: 30px;
+}
+
+.button-box a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.button-box a:hover {
+    background-color: rgba(251, 133, 0, 0.82);
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    margin-left: 0px;
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.next {
+    background-color: rgba(10, 47, 136, 0.85);
+    color: white;
+    font-size: 14px;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+@media(max-width: 1024px) {
+    .wiki {
+        width: 90%;
+        margin: auto;
+        text-align: left;
+        scroll-behavior: smooth;
+    }
+
+    .wiki-content {
+        width: 100%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .wiki-content h1 {
+        font-size: 1.6rem;
+    }
+    .wiki-content h2 {
+        margin-top: 0.5rem;
+    }
+
+    .wiki-images, .wiki-images-low {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -80px;
+        text-align: center;
+    }
+
+    .wiki-images div:first-child {
+        order: 1;
+    }
+
+    .wiki-image-box {
+        margin-bottom: 4vw;
+    }
+
+    .button-box {
+        height: 40px;
+        z-index: 1;
+        margin-top: 4vw;
+        padding-bottom: 40px;
+    }
+
+    .previous {
+        margin-bottom: 10px;
+    }
+}
+
+/* Previous and next buttons */
+.center {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive YouTube embeds */
+.video-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden; 
+
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.video-container iframe, .video-container object, .video-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+

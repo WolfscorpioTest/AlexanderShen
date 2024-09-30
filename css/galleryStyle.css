@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+input {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.top-content {
+    background-color: rgb(235, 235, 235);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(39, 65, 231);
+    margin-bottom: 150px;
+}
+
+h3 {
+    height: 100%;
+    background-color: lightgray;
+    line-height: 60px;
+    padding: 0 50px;
+    color: white;
+}
+
+label {
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+label:hover {
+    color: black;
+}
+
+.photo-gallery {
+    /* Sets the array with 4-element repetitions */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.pic {
+    /* the container element */
+    position: relative;
+    height: 295px;
+    border-radius: 12px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px 0px rgba(10, 67, 113, 0.9);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:-10%;
+}
+
+.pic img {
+    /* The actual image */
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.5s;
+}
+
+.pic:hover {
+    box-shadow: 0 0 10px 0px rgba(0, 102, 255, 0.8);
+    transition: 0.3s;
+}
+
+@media(max-width: 700px) {
+    .photo-gallery{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .pic {
+        /* the container element */
+        position: relative;
+        height: 350px;
+        border-radius: 12px;
+        padding-bottom: 70px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 5px 0px rgba(10, 67, 113, 0.9);
+        cursor: pointer;
+        
+    }
+
+    .pic p {
+        margin-top:5%;
+        font-size: 16px;
+    }
+
+    .pic-image {
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

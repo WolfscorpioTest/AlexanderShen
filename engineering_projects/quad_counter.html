@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering | Quadrature Counter </title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../engineering.html#breadboard-circuits">Engineering Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../compsci.html">CS</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content" id="cmos-l">
+                <h1> Quadrature Counter</h1>
+                <h2> April 2021<br>
+                    EN.520.142 Digital Systems Fundamentals <br>
+                </h2>
+
+                <h3> Objectives: </h3>
+                <li> Speed up the cycle counting so that it counts twice per cycle instead of one (see video
+                    demo)
+                </li>
+
+                <h3>Skills Applied:</h3>
+                <li> Using the SN74HC193N counter and other simple logic gates </li>
+
+                <h3>Comments:</h3>
+                <li>I use to over-complicate this task until a TA suggested <span id="bold-p">using AND gates with several rising and
+                    falling clock edges.</span> The same concepts also apply to the <a href="cmos_imager.html" target="_blank"
+                        rel="noopener noreferrer"> COMS Imager</a> project.</li>
+
+                <div id="blank-space-small" style="padding-top: 21px;"></div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/quadrature_proj/notes_schem.PNG"
+                        style="width:100%; height: 100%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Scratch work.</p>
+                </div>
+
+
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images" id="cmos-r">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="am_radio.html" class="previous"> &laquo; Previous: AM Radio </a>
+                    <a href="gray_counter.html" class="next">Next: Gray Counter &raquo;</a>
+                </div>
+
+                <!-- Images -->
+                <!-- Embed video here -->
+                <div class="wiki-image-box">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/QFsh8Nh1sOs" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p> Project Demo.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/quadrature_proj/notes.PNG"
+                        style="width:99%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Logic flow. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+    <!-- JS for smooth page transition -->
+    <script>
+        var speed = 'normal';
+        $('html, body').hide();
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

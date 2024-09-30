@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering | OFDM Wireless Transmission</title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../engineering.html#breadboard-circuits">Engineering Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../compsci.html">CS</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content" id="cmos-l">
+                <h1> OFDM: Wireless Audio Transmission System</h1>
+                <h2> December 2022<br>
+                     EE-442: Wireless Device Algorithms <br>
+                </h2>
+
+                <h3> Objectives: </h3>
+                <li> Use the <span id="bold-p">Orthogonal Frequency Division Multiplexing (OFDM)</span> technique, 
+                     as well as <span id="bold-p">DFT</span> and phase matching, 
+                     to implement a wireless data transmission system. </li>
+                <li> Use <span id="bold-p"> two speakers and a microphone </span> to transmit audio in binary bits</li>
+                <li> Implement <span id="bold-p">MATLAB </span>algorithms for transmission (data packaging and pre-processing) and reception (denoising, phase correceions, decoding).</li>
+                <li> Write a complete <span id="bold-p">test suite to evaluate design integrity (SNR vs. BER plots, performances under different fading channels, etc.)</li>
+                
+                <h3> Comments: </h3>
+                <p> <li>I worked with two graduate students at <span id="bold-p">EPFL, Switzerland</span> during my study abroad, which was 50% of the course grade. 
+                    My teammates implemented most of the Block and Comb Pilot code. </li>
+                    <li>Then, I was responsbile for testing the implementations, both experimentally 
+                        and through simulations (adding Gaussian white noise, tuning the fading channels, etc.)
+                    </li>
+                </p>
+
+                <h3> Project Deliverables: </h3>
+                    <li> A 20-page
+                    <a href="#"
+                        onclick='window.open("../images/engineering/ofdm_proj/OFDM_Project_Report.pdf");return false;'>
+                        project report </a></li>
+                    <li> A 15-minute <a href="#"
+                        onclick='window.open("../images/engineering/ofdm_proj/OFDM_Presentation.pdf");return false;'>
+                        presentation </a></li>
+                    <li> Complete MATLAB code for the function implementations and testing. See the <a href="https://github.com/JoyYeh2002/OFDM_Final_Project"
+                        target="_blank" rel="noopener noreferrer"> GitHub repo</a>
+                    </li>
+                <br>
+
+                <!-- Images Immediately Under -->
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/ofdm_proj/demo02.PNG"
+                        style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Two ways of packaging the data: Block type and Comb type.</p>
+                </div>
+
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images" id="cmos-r">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="thrust_stand.html" class="previous"> &laquo; Previous: Thrust Stand </a>
+                    <a href="cmos_imager.html" class="next">Next: CMOS Imager &raquo;</a>
+                </div>
+
+                <div class="wiki-image-box">
+                    <a href="#" onclick='window.open("../images/engineering/cmos_proj/VLSI_poster.png");return false;'>
+                        <img src="../images/engineering/ofdm_proj/demo01.PNG"
+                            style="width:99%; height: 90%; border: 2px solid rgba(0,0,0,0.3);"></a>
+                    <p> System block diagram. </p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/ofdm_proj/demo03.PNG"
+                        style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Constellation plots of transmission results under different data packaging mechanisms.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/ofdm_proj/demo09.PNG"
+                        style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Optimal transmission parameters.</p>
+                </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering | Mosquito Trap </title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../engineering.html#breadboard-circuits">Engineering Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../compsci.html">CS</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content" id="mosquito-l">
+                <h1> Solar-Powered Mosquito Trap</h1>
+                <h2> October 2021 - April 2022<br>
+                    EN.520.212 ECE Engineering Team Project <br>
+                </h2>
+
+                <h3> Description: </h3>
+                <li> I worked with 3 undergraduate ECE students at JHU to research and build early prototypes of a
+                    solar-powered mosquito trap.
+                </li>
+                <li> The trap should <span id="bold-p">be as affordable as possible and alternate power sources between a LiPo battery and
+                    a solar panel. </span></li>
+                <li> It heats up a semiconductor heating pad to 2 degrees celsuis above ambient temperature, then lures
+                    and kills mosquitos with insecticide. </li>
+                <li>Affiliated with
+                    <a href=" https://malaria.jhsph.edu/" target="_blank" rel="noopener noreferrer"> the JHU Malaria
+                        Research Institude</a>
+                <li>See
+                    <a href="#"
+                        onclick='window.open("../images/engineering/mosquito_proj/SP22_final_report.pdf");return false;'>
+                        this link </a> for the Spring 2022 preliminary report.
+                </li>
+
+                <h3>Skills Applied:</h3>
+                <li> Arduino Coding, circuit tests, prototyping</li>
+
+                <div id="blank-space-small" style="padding-top: 8px;"></div>
+
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images" id="mosquito-r">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="gray_counter.html" class="previous"> &laquo; Previous: Gray Code </a>
+                    <a href="thrust_stand.html" class="next">Next: Thrust Stand &raquo;</a>
+                </div>
+
+                <!-- Images -->
+                <div class="wiki-image-box">
+                    <a href="#"
+                        onclick='window.open("../images/engineering/mosquito_proj/jhu_design_day_poster.png");return false;'>
+                        <img src="../images/engineering/mosquito_proj/jhu_design_day_poster.png"
+                            style="width:99%; height: 90%; border: 2px solid rgba(0,0,0,0.3);"></a>
+                    <p> the 2022 JHU Design Day Poster. Click on image to enlarge. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+
+</html>

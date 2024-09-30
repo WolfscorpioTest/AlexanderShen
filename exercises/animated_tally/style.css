@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+
+    --orange: #fb8500;
+    --faint-orange: rgba(251, 133, 0, 0.82);
+    --dark-navy: rgba(19, 50, 122, 0.92);
+    --dark-navy-solid: rgb(17, 43, 104);
+    --lightning-blue: rgba(0, 102, 255, 0.9);
+    --water-blue: rgba(138, 192, 236, 0.411);
+}
+
+body {
+    background-color: #121317;
+}
+
+.wrapper {
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.container {
+    width: 50vmin;
+    height: 28vmin;
+    border: 1px solid var(--lightning-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 1em;
+    position: relative;
+    font-size: 12px;
+    border-radius: 0.5em;
+    background-color: #21242b;
+    border-bottom: 7px solid var(--orange);
+
+}
+
+i {
+    color: var(--orange);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+span.num {
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3.2em;
+}
+
+span.text {
+    color: #e0e0e0;
+    font-size: 1.5em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 85vw;
+    }
+    .container {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .container {
+        height: calc(50% - 40px);
+        width: 30vmin;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        gap: 15px;
+    }
+
+    .container {
+        width: 100%;
+        height: 25vmin;
+        font-size: 14px;
+        line-height: 9vw;
+    }
+
+    span.num {
+        font-size: 7vmin;
+    }
+
+    i {
+        font-size: 6vmin;
+    }
+}

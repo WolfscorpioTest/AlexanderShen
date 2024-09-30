@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS | Game of Life </title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../compsci.html#course-projects">CS Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../engineering.html">Engineering</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content", id="mia-l">
+                <h1> Game of Life (MATLAB) </h1>
+                <h2> December 2020<br>
+                    EN.500.134 Bootcamp: MATLAB<br>
+                </h2>
+
+                <h3> Objectives:</h3>
+                <li>Implement John Conway's Game of Life, a cellular automaton</li>
+                <li>Read a .txt file indicating a game state</li>
+                <li>Display the real-time game states after a certain number of initial frames</li>
+                <li> <span id="bold-p">Build an interactive GUI</span> for inputting files and
+                    saving game states and videos</li>
+
+                <h3>Skills Applied:</h3>
+                <li>MATLAB maatrices, MATLAB GUI, file I/O</li>
+
+                <h3>Comments:</h3>
+                <p> I later <span id="bold-p">built another GUI</span> for my research lab, and what I learned from this project
+                    was extremely helpful.
+                </p>
+                <div id="blank-space"></div>
+            </div>
+
+        
+            <!-- Image and buttons -->
+            <div class="wiki-images", id="mia-r">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <!-- <a href="https://github.com/JoyYeh2002/Avoid_Falling_Blocks_Game" target="_blank"
+                    rel="noopener noreferrer" class="previous"> &laquo; Previous: Falling Blocks</a> -->
+                    <a href="MIA_cardiac.html" class="previous"> &laquo; Previous: Cardiac Imaging</a>
+                    <a href="audio_generator.html" class="next">Next: Audio Generator &raquo;</a>
+                </div>
+
+                <!-- Images -->
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/game_of_life_proj/gui.PNG" style="width:80%;">
+                    <p> The interactive GUI interface.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/game_of_life_proj/demo_video.gif" style=width:80%;">
+                    <p> Sample animation generated.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+
+</html>

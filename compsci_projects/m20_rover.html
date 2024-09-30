@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS | LIMBS Lab Data Analysis </title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../compsci.html#course-projects">CS Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../engineering.html">Engineering</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content" id="limbs-l">
+                <h1> Mars 2020 Perseverence Rover Software Test Suite </h1>
+                <h2> June through August 2023<br>
+                     NASA Jet Propulsion Laboratory<br>
+                </h2>
+
+                <h3> Objective: </h3>
+                <li> During the 10-week internship at JPL, I developed a general test suite and data visualization tools for the
+                    <a href="https://mars.nasa.gov/mars2020/" target="_blank" rel="noopener noreferrer"> Mars 2020 Perseverence Rover</a> under the code 398N, the instrument data systems (IDS) team at JPL.  
+           
+                <h3> Work Responsibilities: </h3>
+                <li> Supported a <span id="bold-p"> CI/CD test suite </span> with 30+ test cases with <span id="bold-p"> Python </span> and 
+                    <span id="bold-p"> Gherkin </span>, supporting dozens of images and text product validations with different versions of algorithms.
+                <li> Completed a full-stack project with IDS data queries, subprocess function calls, S3 cloud support, and HTML report generations. </li>
+                <li> Developed a Python GUI for user interaction locally and test parameter design. 
+                    Watch a demo  <a href="https://youtu.be/y97NzoiotZM" target="_blank" rel="noopener noreferrer"> HERE</a>. </li>
+                </li>
+                <li> Collaborated with the IDS team through <span id="bold-p"> Git </span> and <span id="bold-p"> Linux remote machines </span>. </li>
+
+                <h3> Skills Applied:</h3>
+                <li> CI/CD algorithm and data structures</li>
+                <li> Technical documentation and writing </li>
+                <li> Software testing </li>
+
+                <h3> Comments: </h3>
+                <li> I received phenomenal mentorship from my team at JPL and developed many essential skills as a science software engineer. </li>
+                <li> I also gained extensive experiences with data structure design, reading and expanding code bases, and designing user-centric functionalities. </li>
+                <li> It also gives me a great sense of satisfaction to know that my work can contribute to the amazing mission of Mars 2020 and beyond. </li>
+                <div id="blank-space-small" style="padding-top: 11px;"></div>
+
+                <!-- Images -->
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/m20_proj/dev_progress.PNG"
+                        style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Some screenshots of devlopment progress</p>
+                </div>            
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images" id="limbs-r">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="game_of_life.html" class="previous"> &laquo; Previous: Game of Life</a>
+                    <a href="limbs_gui.html" class="next"> &raquo; Next: LIMBS Lab</a>
+                </div>
+
+                <div class="wiki-image-box">
+
+                     <!-- Images -->
+                    <div class="wiki-image-box">
+                        <img src="../images/compsci/m20_proj/worklfow.PNG"
+                            style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                        <p> M20 IDS Pipeline </p>
+                    </div>
+
+                     <!-- Images -->
+                     <div class="wiki-image-box">
+                        <img src="../images/compsci/m20_proj/difpic_GUI.PNG"
+                            style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                        <p> GUI for Image comparisons and User-defined test parameters</p>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="wiki-image-box">
+                        <img src="../images/compsci/m20_proj/mesh_report.PNG"
+                            style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                        <p> Mesh product text comparison report</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+
+</html>

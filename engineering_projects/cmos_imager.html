@@ -1,0 +1,143 @@
+<!-- Updated 09.15.2023 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering | CMOS Imager</title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../engineering.html#breadboard-circuits">Engineering Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../compsci.html">CS</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content" id="cmos-l">
+                <h1> CMOS Imager Design in Cadence</h1>
+                <h2> April 2022<br>
+                     EN.520.216 Introduction to VLSI <br>
+                </h2>
+
+                <h3> Objectives: </h3>
+                <li> Use <span id="bold-p">Cadence </span> to design a CMOS imager chip 
+                </li>
+                <li> Write a final report in <span id="bold-p">IEEE format</span></li>
+
+                <h3> Skills Applied & Outcomes:</h3>
+                <li> Cadence schematic, layout, and simulations</li>
+                <li> Layout Vs. Schematic (LVS), Design Rule Check (DLC)</li>
+
+                <h3> Comments: </h3>
+                <p> I sketching and designing layouts on paper and in the software, debugging, and writing the
+                    report. We made a few mistakes at the beginning but managed to fix them by the end of the project.
+                </p>
+                <br>
+
+                <!-- Images -->
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/cmos_proj/amplifier_layout.jpg"
+                        style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> 5T amplifier layout.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/cmos_proj/amplifier_schem.jpg"
+                        style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> 5T amplifier schematic.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/cmos_proj/Fig12R.jpg"
+                        style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Sample voltage output of 16 photodiode cells in an array.</p>
+                </div>
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images" id="cmos-r">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="ofdm.html" class="previous"> &laquo; Previous: OFDM Audio Transmitter </a>
+                    <a href="dtmf.html" class="next">Next: Phone Key DTMF &raquo;</a>
+                </div>
+
+                <div class="wiki-image-box">
+                    <a href="#" onclick='window.open("../images/engineering/cmos_proj/VLSI_poster.png");return false;'>
+                        <img src="../images/engineering/cmos_proj/VLSI_poster.png"
+                            style="width:99%; height: 90%; border: 2px solid rgba(0,0,0,0.3);"></a>
+                    <p> the 2022 JHU Design Day Poster. Click image to enlarge. </p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/cmos_proj/shift_register_sim.jpg"
+                        style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> C2MOS shift register simulations to control a 4 x 4 array.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/cmos_proj/big_chip_layout.jpg"
+                        style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> The 4x4 imager chip layout with column amplifier.</p>
+                </div>     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+</html>
